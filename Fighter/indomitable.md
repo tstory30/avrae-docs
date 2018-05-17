@@ -2,7 +2,7 @@
 *By Toothless#7854.*
 
 <p align="center">
-  <img src="https://i.imgur.com/Azv7Ii0.png"/>
+  <img src="https://i.imgur.com/lEu7gkR.png"/>
 </p>
 
 Subtracts 1 from "Indomitable" counter.
@@ -32,7 +32,7 @@ Run the command in the **Code** section. It will automatically setup counters an
 -desc "{{"Beginning at 9th level, you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can’t use this feature again until you finish a long rest.\n\nYou can use this feature twice between long rests starting at 13th level and three times between long rests starting at 17th level." if valid else "You can’t use this feature again until you finish a long rest.\n\nYou can use this feature twice between long rests starting at 13th level and three times between long rests starting at 17th level. (``!g lr``)"}}"
 -f "{{counter}} | {{'◉'*get_cc(counter) + '〇'*(get_cc_max(counter)-get_cc(counter))}}"
 {{"-footer \"" + pgSubject + " | " + pgNum + "\"" if str(showpage) == "true" else ""}}
-{{"-thumb <image>" if str(embedimage) == "true" else ""}}
+{{"-thumb " + str(image) if str(embedimage) == "true" else ""}}
 -color <color>
 ```
 
