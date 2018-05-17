@@ -2,7 +2,7 @@
 *By Toothless#7854.*
 
 <p align="center">
-  <img src="https://i.imgur.com/cv35B5M.png"/>
+  <img src="https://i.imgur.com/LYyAgYN.png"/>
 </p>
 
 Subtracts 1 from "Action Surge" counter. 
@@ -32,7 +32,7 @@ Run the command in the **Code** section. It will automatically setup counters an
 -desc "{{"On your turn, you can take one additional action on top of your regular action and a possible bonus action.\n\nOnce you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn." if valid else "Once you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn. (``!g sr``)"}}"
 -f "{{counter}} | {{'◉'*get_cc(counter) + '〇'*(get_cc_max(counter)-get_cc(counter))}}"
 {{"-footer \"" + pgSubject + " | " + pgNum + "\"" if str(showpage) == "true" else ""}}
-{{"-thumb <image>" if str(embedimage) == "true" else ""}}
+{{"-thumb " + str(image) if str(embedimage) == "true" and valid else ""}} 
 -color <color>
 ```
 
