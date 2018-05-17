@@ -62,7 +62,7 @@ Run the snippet or the alias in the **Code** section. It will automatically setu
 {{"" if existsAmmo else set_cc(counter, 20)}}
 {{set("used", max(0, get_cc(counter2)))}}
 {{set("collected", floor(used / 2))}}
-{{set("ammoRoll", vroll(str(get_cc(counter)) + " + " + str(collected)))}}
+{{set("ammoRoll", vroll(str(get_cc(counter)) + " + (" + str(used) + " / 2)"))}}
 {{set("valid", used != 0)}}
 {{mod_cc(counter, collected)}}
 {{set_cc(counter2, 0)}}
@@ -71,7 +71,7 @@ Run the snippet or the alias in the **Code** section. It will automatically setu
 {{"-f \"" + counter2 + " | " + str(used) + "\"" if valid else ""}}
 {{"-f \"" + counter + " | " + str(ammoRoll) + "\"" if valid else ""}}
 {{"-footer \"" + pgSubject + " | " + pgNum + "\"" if str(showpage) else ""}}
-{{"-thumb {}".format(image) if str(embedimage) == "true" else ""}}
+{{"-thumb " + str(image) if str(embedimage) == "true" else ""}}
 -color <color>
 ```
 
