@@ -2,11 +2,11 @@
 *By Toothless#7854.*
 
 <p align="center">
-  <img src="https://i.imgur.com/haukykT.png"/>
+  <img src="https://i.imgur.com/e06lm9q.png"/>
 </p>
 
 <p align="center">
-  <img src="https://i.imgur.com/NQc7PhK.png"/>
+  <img src="https://i.imgur.com/dXi20mT.png"/>
 </p>
 
 ``ammo`` subtracts 1 from "Ammo" counter and adds 1 to "Used Ammo" counter on attack. ``!collect`` adds half of "Used Ammo" counter to "Ammo", then sets "Used Ammo" to 0. 
