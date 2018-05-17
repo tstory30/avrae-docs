@@ -2,11 +2,11 @@
 *By Toothless#7854.*
 
 <p align="center">
-  <img src="https://i.imgur.com/LumNmww.png"/>
+  <img src="https://i.imgur.com/haukykT.png"/>
 </p>
 
 <p align="center">
-  <img src="https://i.imgur.com/5QA2Yxi.png"/>
+  <img src="https://i.imgur.com/NQc7PhK.png"/>
 </p>
 
 ``ammo`` subtracts 1 from "Ammo" counter and adds 1 to "Used Ammo" counter on attack. ``!collect`` adds half of "Used Ammo" counter to "Ammo", then sets "Used Ammo" to 0. 
@@ -61,10 +61,9 @@ Run the snippet or the alias in the **Code** section. It will automatically setu
 {{create_cc_nx(counter2, 0)}}
 {{"" if existsAmmo else set_cc(counter, 20)}}
 {{set("used", max(0, get_cc(counter2)))}}
-{{set("collected", floor(used / 2))}}
 {{set("ammoRoll", vroll(str(get_cc(counter)) + " + (" + str(used) + " / 2)"))}}
 {{set("valid", used != 0)}}
-{{mod_cc(counter, collected)}}
+{{set_cc(counter, ammoRoll.total)}}
 {{set_cc(counter2, 0)}}
 -title "<name> {{"collects" if valid else "attempted to collect"}} their ammunition!"
 -desc "{{"At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield." if valid else "You do not have any expended ammunition to recover."}}"
