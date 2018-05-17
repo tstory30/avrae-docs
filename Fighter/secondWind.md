@@ -2,7 +2,7 @@
 *By Toothless#7854.*
 
 <p align="center">
-  <img src="https://i.imgur.com/nscoFzW.png"/>
+  <img src="https://i.imgur.com/6xCj8pX.png"/>
 </p>
 
 Subtracts 1 from "Second Wind" counter. Regains hit points equal to 1d10 + your fighter level. Displays current and max hit points after regaining. 
@@ -36,7 +36,7 @@ Run the command in the **Code** section. It will automatically setup counters an
 {{"-f \"Hit Points | " + str(get_hp()) + " / " + str(hp) + "\"" if valid else ""}}
 -f "{{counter}} | 〇"
 {{"-footer \"" + pgSubject + " | " + pgNum + "\"" if str(showpage) == "true" else ""}}
-{{"-thumb <image>" if str(embedimage) == "true" else ""}}
+{{"-thumb " + str(image) if str(embedimage) == "true" else ""}}
 -color <color>
 ```
 
