@@ -34,7 +34,7 @@ Run the command in the **Code** section. It will automatically setup counters an
 -f "Level (if any) | {{level}}" 
 -f "Fighter Level (if any) | {{FighterLevel}}" 
 {{"-footer \"" + pgSubject + " | " + pgNum + "\"" if str(showpage) == "true" else ""}}
-{{"-thumb <image>" if str(embedimage) == "true" else ""}}
+{{"-thumb " + str(image) if str(embedimage) == "true" else ""}}
 -color <color>
 ```
 
