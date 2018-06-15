@@ -2,6 +2,7 @@
 *By Theodore#7790.*
 
 Horde Breaker Ranger Archetype feat
+To use, !horde
 
 ### Setup
 `No setup needed.`
