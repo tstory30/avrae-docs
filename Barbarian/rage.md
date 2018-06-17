@@ -1,7 +1,7 @@
 # Rage
 *By Theodore#7790.*
 
-Subtracts 1 from `Rage` counter and applies resistance along with Rage damage.
+Subtracts 1 from `Rage` counter and applies resistance along with Rage damage.  
 Can only be used while in initiative. 
 
 ### Usage
@@ -9,12 +9,12 @@ Can only be used while in initiative.
 `!rage`
 
 ### Setup
-`!cc create Rage -min 0 -max # -type bubble -reset long`
+`!cc create Rage -min 0 -max # -type bubble -reset long`  
 Insert your number of times you can rage per long rest instead of #
 
 ### End Early
-!i effect "<name>" 10 "Rage" -d "{{floor(level/9)+floor(level/16)-floor(level/18)+2}}"
-!i opt "<name>" -resist bludgeoning -resist slashing -resist piercing
+`!i effect "<name>" 10 "Rage" -d "{{floor(level/9)+floor(level/16)-floor(level/18)+2}}"`  
+`!i opt "<name>" -resist bludgeoning -resist slashing -resist piercing`
 
 ### Code
 ```GN
