@@ -5,7 +5,7 @@
 `!a [weapon] ra` 
 
 ### Setup
-``Run the command in the Code section. It will automatically add your rage damage to your attack. **Note**: It does increase with level.``
+Run the command in the Code section. It will automatically add your rage damage to your attack. **Note**: It does increase with level.
 
 ### Code
 ```GN
